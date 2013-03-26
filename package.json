@@ -1,6 +1,6 @@
 {
   "name": "winston-spy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test winston logging with spies",
   "main": "src/winston-spy.js",
   "scripts": {

@@ -2,14 +2,14 @@ var util = require('util');
 var winston = require('winston');
 
 spyLogger = function(options) {
-  this.name = 'spyLogger';
-
   options = options || {};
   this.level = options.level || 'info';
   this.spy = options.spy;
 };
 
 util.inherits(spyLogger, winston.Transport);
+
+spyLogger.prototype.name = 'spyLogger';
 
 spyLogger.prototype.log = function(level, msg, meta, callback) {
   this.spy(level, msg, meta);

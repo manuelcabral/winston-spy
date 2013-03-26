@@ -18,4 +18,10 @@ describe('sinonjsLogger', function() {
     assert(spy.calledOnce);
     assert(spy.calledWith('info', testMessage, testMeta));
   });
+
+  it('should be removable', function() {
+    winston.remove(spyLogger);
+    winston.log('info', testMessage, testMeta);
+    assert(spy.calledOnce);
+  });
 });
