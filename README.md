@@ -2,12 +2,15 @@
 
 This tiny module defines a winston transport that can be used to test winston logging with spies
 
+# Usage
+
+Pass a function to the transport as the `spy` option. This function will be called whenever `winston.log()` is called.
 
 # Example
 
     var winston = require('winston');
     var sinon = require('sinon');
-    var spyLogger = require('../src/winston-spy');
+    var spyLogger = require('winston-spy');
     
     var spy = sinon.spy();
     
