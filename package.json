@@ -1,6 +1,6 @@
 {
   "name": "winston-spy",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Test winston logging with spies",
   "main": "src/winston-spy.js",
   "scripts": {
@@ -18,8 +18,7 @@
   ],
   "author": "Manuel Cabral (m.cabral@digisfera.pt)",
   "license": "BSD",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "sinon": "~1.6.0",
     "mocha": "~1.8.2"
